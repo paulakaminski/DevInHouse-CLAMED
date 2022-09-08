@@ -1,0 +1,52 @@
+.post {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 20px;
+    width: 480px;
+}
+
+.fotoPerfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nomeUsuario {
+    margin: 0px;
+}
+
+.dataPost {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    margin-top: 8px;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.fotoPost {
+    width: 430px;
+    height: 430px;
+    border-radius: 8px;
+
+}
+
+.likeHeart {
+    width: 20px;
+    height: 20px;
+}
+
+.likesComments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postContent {
+    margin-left: 10px;
+}
+
+.footer {
+    margin-left: 10px;
+}

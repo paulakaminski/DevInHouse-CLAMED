@@ -1,0 +1,36 @@
+.main {
+    margin: 10px ;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #EEEEEE;
+    align-items: center;
+    background-color: #E8F9FD;
+    width: 480px;
+}
+
+.fotoPerfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.contatos {
+    display: flex;
+    margin: 8px;
+    gap: 8px;
+}
+
+.infoContatos {
+    margin-top: 8px;
+}
+
+.nomeContato {
+    margin: 0px;
+}
+
+.descricaoContato {
+    margin: 0px;
+    font-size: 14px;
+}
+
