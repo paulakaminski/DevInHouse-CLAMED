@@ -18,7 +18,7 @@ export default function Contatos({ photo, name, description }) {
   );
 }
 
-Contatos.PropTypes = {
+Contatos.propTypes = {
   photo: PropTypes.string,
   name: PropTypes.string,
   description: PropTypes.string,

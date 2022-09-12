@@ -51,7 +51,7 @@ export default function Post({
   );
 }
 
-Post.PropTypes = {
+Post.propTypes = {
   fotoPerfil: PropTypes.string,
   nomeUsuario: PropTypes.string,
   dataPost: PropTypes.string,
