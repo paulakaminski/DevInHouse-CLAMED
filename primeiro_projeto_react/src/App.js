@@ -18,6 +18,8 @@ import Focus from "./Componentes/S09 - Ex 05 - useRef/useRef";
 import Mensagens from "./Componentes/S09 - Ex 06 - Mensagens/Mensagens";
 import ProgressBar from "./Componentes/S09 - Ex 07 - Barra de Progresso/Progresso";
 import ProgressBarProducts from "./Componentes/S09 - Ex 08 - Barra de Progresso com mais Produtos/ProgressoProdutos";
+import ModeloDeHooks from "./Componentes/S09 - Ex 09 - Converter para Hooks/ModeloDeHooks";
+import ControleInput from "./Componentes/S09 - Ex 10 - Controle de Estado/ControleInput";
 import Table from "./Componentes/S11 - Aula 04 - Bootstrap/Bootstrap";
 import Site from "./Componentes/S11 - Ex 01 - Site/Site";
 import SiteBootstrap from "./Componentes/S11 - Ex 02 - Bootstrap/SiteBootstrap";
@@ -232,11 +234,15 @@ export default function App() {
 
       {/* <ProgressBarProducts /> */}
 
+      {/* <ModeloDeHooks /> */}
+
+      <ControleInput />
+
       {/* <Table /> */}
 
       {/* <Site /> */}
 
-      <SiteBootstrap />
+      {/* <SiteBootstrap /> */}
 
       {/* <Cronometro /> */}
       {/* {arrayProduto.map((item) => {
