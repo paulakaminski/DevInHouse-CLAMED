@@ -9,33 +9,47 @@
 // Como dica, utilize o componente <progress></progress>
 // Exemplo de uso: ``` <progress value={0.05}></progress> ```
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function ProgressBar() {
-  const [value, setValue] = useState(0);
+  const softwareObj = {
+    nome: "Manual SEFIP 8.4 - Junho 2022",
+    downloaded: 0,
+    isDownloading: false,
+  };
+
+  const [software, setSoftware] = useState(softwareObj);
+
+  const interval = useRef();
+
+  function iniciarDownload() {
+    interval.current = setInterval(() => {
+      setSoftware((prev) => ({
+        ...prev,
+        isDownloading: true,
+        downloaded: (prev.downloaded += 1),
+      }));
+    }, 50);
+  }
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setValue((oldValue) => {
-        const newValue = oldValue + 10;
-
-        if (newValue === 100) {
-          clearInterval(interval);
-        }
-        return newValue;
-      });
-    }, 1000);
-  }, []);
-
-  function download() {
-    <progress value={value} max={100}></progress>;
-  }
+    if (software.isDownloading && software.downloaded >= 100) {
+      clearInterval(interval.current);
+      setSoftware((prev) => ({
+        ...prev,
+        downloaded: 0,
+        isDownloading: false,
+      }));
+    }
+  }, [software]);
 
   return (
     <div>
-      <h5>Manual SEFIP 8.4 - Junho 2022</h5>
+      <h4>
+        {software.nome}</h4>
       <p>1456kb</p>
-      <button onClick={download}>Download</button>
+      <progress value={software.downloaded} min={0} max={100}></progress>
+      <button onClick={iniciarDownload}>Download</button>
     </div>
   );
 }

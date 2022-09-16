@@ -1,23 +1,25 @@
 //Crie um componente chamado Produto. Cada produto contém as props photo, name e price.
 
-import "./Produtos.css"
+import "./Produtos.css";
 
 export default function Produtos({ photo, name, price }) {
   return (
-    <div className="mainContent">
+    <div className="container">
       <div className="produtos">
-        <img
-          src={photo}
-          alt="Imagem do produto"
-          className="imagemProduto"
-        ></img>
+        <div className="imagem">
+          <img
+            src={photo}
+            alt="Imagem do produto"
+            className="imagemProduto"
+          ></img>
+        </div>
         <div className="infoProdutos">
-          <h4 className="nomeProduto">{name}</h4>
-          <p className="preco">{price}</p>
+          <h5 className="nomeProduto">{name}</h5>
+          <p className="preco">
+            <strong>{price}</strong>
+          </p>
         </div>
       </div>
     </div>
   );
-};
-
-
+}

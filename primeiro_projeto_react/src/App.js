@@ -15,8 +15,12 @@ import Cliques from "./Componentes/S09 - Ex 03 - useState/useState";
 import Titulos from "./Componentes/S09 - Ex 04 - Hooks/Hooks";
 import Condicional from "./Componentes/S08 - Ex 10 - Renderização condicional/Condicional";
 import Focus from "./Componentes/S09 - Ex 05 - useRef/useRef";
+import Mensagens from "./Componentes/S09 - Ex 06 - Mensagens/Mensagens";
 import ProgressBar from "./Componentes/S09 - Ex 07 - Barra de Progresso/Progresso";
+import ProgressBarProducts from "./Componentes/S09 - Ex 08 - Barra de Progresso com mais Produtos/ProgressoProdutos";
 import Table from "./Componentes/S11 - Aula 04 - Bootstrap/Bootstrap";
+import Site from "./Componentes/S11 - Ex 01 - Site/Site";
+import SiteBootstrap from "./Componentes/S11 - Ex 02 - Bootstrap/SiteBootstrap";
 
 // const arrayProduto = [
 //   {
@@ -170,13 +174,13 @@ const arrayProdutos = [{
 export default function App() {
   return (
     <div>
-      {/* <Titulo />
+      {/* <Titulo /> */}
 
-      <Soma num1={5} num2={10} />
+      {/* <Soma num1={5} num2={10} /> */}
+{/* 
+      <Botao corDeFundo={"#FFD8A9"} titulo={"Sou um botão"} /> */}
 
-      <Botao corDeFundo={"#FFD8A9"} titulo={"Sou um botão"} />
-
-      {arrayPosts.map((item) => {
+      {/* {arrayPosts.map((item) => {
         return (
           <Post
             fotoPerfil={item.fotoPerfil}
@@ -188,9 +192,9 @@ export default function App() {
             qtdeCurtidas={item.qtdeCurtidas}
           />
         );
-      })}
+      })} */}
       
-      {arrayContatos.map((item) => {
+      {/* {arrayContatos.map((item) => {
         return (
           <Contatos
             photo={item.photo}
@@ -198,9 +202,9 @@ export default function App() {
             description={item.description}
           />
         );
-      })};
+      })}; */}
 
-      {arrayProdutos.map((item) => {
+      {/* {arrayProdutos.map((item) => {
         return (
         <Produtos
         photo={item.photo}
@@ -210,21 +214,29 @@ export default function App() {
         )
       })} */}
 
-      {/* <Frutas />
+      {/* <Frutas /> */}
 
-      <Console />
+      {/* <Console /> */}
 
-      <Cliques />
+      {/* <Cliques /> */}
 
-      <Titulos />
+      {/* <Titulos /> */}
 
-      <Condicional />
+      {/* <Condicional /> */}
 
-      <Focus /> */}
+      {/* <Focus /> */}
 
-      <ProgressBar />
+      {/* <Mensagens /> */}
+
+      {/* <ProgressBar /> */}
+
+      {/* <ProgressBarProducts /> */}
 
       {/* <Table /> */}
+
+      {/* <Site /> */}
+
+      <SiteBootstrap />
 
       {/* <Cronometro /> */}
       {/* {arrayProduto.map((item) => {
