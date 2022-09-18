@@ -1,9 +1,12 @@
 // Adicione no projeto o bootstrap para estilização dos componentes.
 
+import { HeaderPersonalizado } from "../S11 - Ex 05 - Styled Components/StyledHeader";
+
 export default function HeaderBootstrap() {
   return (
     <header>
-      <nav class="navbar navbar-light bg-light">
+      <HeaderPersonalizado>
+      {/* <nav class="navbar navbar-light bg-light"> */}
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -16,7 +19,8 @@ export default function HeaderBootstrap() {
             Título da Página
           </a>
         </div>
-      </nav>
+      {/* </nav> */}
+      </HeaderPersonalizado>
     </header>
   );
 }

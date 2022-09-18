@@ -3,9 +3,8 @@ export default function FooterBootstrap() {
     <>
       <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Desenvolvido por:
-          </a>
+          <div class="col">Dados de Contato</div>
+          <div class="col">Composition</div>
         </div>
       </nav>
     </>

@@ -236,13 +236,13 @@ export default function App() {
 
       {/* <ModeloDeHooks /> */}
 
-      <ControleInput />
+      {/* <ControleInput /> */}
 
       {/* <Table /> */}
 
       {/* <Site /> */}
 
-      {/* <SiteBootstrap /> */}
+      <SiteBootstrap />
 
       {/* <Cronometro /> */}
       {/* {arrayProduto.map((item) => {
