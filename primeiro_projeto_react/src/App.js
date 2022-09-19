@@ -228,7 +228,7 @@ export default function App() {
 
       {/* <Focus /> */}
 
-      {/* <Mensagens /> */}
+      <Mensagens />
 
       {/* <ProgressBar /> */}
 
@@ -242,7 +242,7 @@ export default function App() {
 
       {/* <Site /> */}
 
-      <SiteBootstrap />
+      {/* <SiteBootstrap /> */}
 
       {/* <Cronometro /> */}
       {/* {arrayProduto.map((item) => {
